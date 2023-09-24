@@ -1,0 +1,22 @@
+Hello, 
+
+Check out the guidelines folder. This folder is to illustrate and guide you on better understanding of the problem. 
+
+You have to write an algorithm that will solve the following task. Here are the instructions for your algorithm.
+
+Inputs are in the dataset folder:
+1. Image (the raw image of the person)
+2. Human parsing
+3. Pose estimation of the person (both json and image) [*1]
+
+Output:
+The person's image with shaded region. Look at the sample_output.jpg for details. You should cover all the pixels of lower body parts of the person (cover legs, jeans, trousers, shorts, belt, socks). Please keep the shoes, upper body part of the person untouched including hands. If hands are intersected with the lower body, please don't shade the hands. Have a look at the guidlines folder, notice that most of the images follow a trapezoid contour. If possible, create the trapezoid representation of the shaded area as in the guidlines folder.
+
+Note: you don't have to use all the inputs given to you. You may use only those inputs that you find important for your algorithm to work better. However, making use of all inputs can come in handy.
+
+Upload your results of 700 images and share with us along with code.
+
+
+[*1]
+body25 + hands labelling, check out the openpose labels for more details if you want.
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
